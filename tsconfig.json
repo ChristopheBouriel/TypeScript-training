@@ -1,0 +1,7 @@
+{
+    "files": ["src/main.ts", "src/helloGulp.ts"],
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "target": "es5"
+    }
+}
