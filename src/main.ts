@@ -1,3 +1,3 @@
 import {hello} from './helloGulp'
 
-hello("TypeScript");
+hello("welcome", "TypeScript & Gulp");
