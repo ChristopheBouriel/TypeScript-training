@@ -1,7 +1,9 @@
 {
-    "files": ["src/main.ts", "src/helloGulp.ts"],
+    "files": ["src/main.ts", "src/helloGulp.ts", "src/playAround.ts"],
     "compilerOptions": {
       "noImplicitAny": true,
-      "target": "es5"
+      "target": "es5",
+      "experimentalDecorators": true
     }
+    
 }
