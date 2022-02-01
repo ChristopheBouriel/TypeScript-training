@@ -79,9 +79,20 @@ let decorator1 = (constructeur: any) => console.log('Décorateur 1 appelé')
  *  il sera appelé (à chaque instantiation de la classe qu'il décore), à savoir
  *  le constructeur de la classe
  */
+
+let decorator2: PropertyDecorator = (prototype, name) => {
+    console.log(prototype);
+    console.log(name);
+}
+/** La aussi le décorateur recevra automatiquement deux arguments quand
+ *  il sera appelé : le premier, target, est le prototype de la classe dans laquelle
+ *  est utilisé le décorateur ; le deuxième est le nom de la propriété en question
+ */
 @decorator1
 class ClassTwo <T> {
     constructor(public arg1: T, public arg2: T) {}
+    @decorator2
+    prop1: 'foo'
 }
 
 
